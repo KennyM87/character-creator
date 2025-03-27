@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Creator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="character-form">
+        <label for="character-name">Name:</label>
+        <input type="text" id="character-name">
+
+        <br>
+
+        <label for="character-age">Age:</label>
+        <input type="number" id="character-age" min="0" max="99">
+
+        <br>
+       
+        <label for="character-class">Class:</label>
+        <select id="character-class">
+            <option value=""></option>
+            <option value="Mage">Mage</option>
+            <option value="Wizard">Wizard</option>
+            <option value="Rogue">Rogue</option>
+        </select>
+
+        
+        <div id="character-Img" class="hidden">
+            <img id="char-image" src="images/MageImg.png" alt="Character Image">
+        </div>
+                
+        <br>       
+
+        <div id="spell-choice" class="hidden">
+            <label for="starting-spell">Choose a starting spell:</label>
+            <select id="starting-spell">
+                <option value="Fireball">Fireball</option>
+                <option value="Lightning">Lightning</option>
+            </select>
+        </div>
+
+        <br>
+
+        <label>Character Type:</label>
+            <input type="radio" name="character-type" value="Hero"> Hero
+            <input type="radio" name="character-type" value="Villain"> Villain
+
+        <br>
+
+        <label>Abilities:</label>
+            <input type="checkbox" value="Strength"> Strength
+            <input type="checkbox" value="Stealth"> Stealth
+            <input type="checkbox" value="Magic"> Magic
+        
+        <br>
+
+        <button type="button" id="submit-btn">Create Character</button>
+    </form>
+
+    <div id="character-display"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

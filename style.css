@@ -1,0 +1,98 @@
+/* Full Main Page */
+body {
+    background-color: orange;
+    text-align: center;
+    margin: 0;
+    padding: 15px;
+}
+
+/* Form */
+form {
+    background: darkred;
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+    margin: auto;
+    color: white;
+}
+
+/* Labels, Inputs */
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 95%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+/* Checkbox, Radio */
+input[type="checkbox"], input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+/* Create Character Button */
+button {
+    margin-top: 15px;
+    padding: 10px;
+    width: 80%;
+    background: #28a745;
+    color: white;
+    border: none;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #1d6e2d;
+}
+
+/* Character Display */
+#character-display {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Character Sheet */
+.character-sheet {
+    background: darkred;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: left;
+    max-width: 300px;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.character-sheet h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.character-sheet p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.hidden {
+    display: none;
+}
+
+@font-face {
+    font-family: CharacterSheetFont;
+    src: url(https://www.dafont.com/vortigra.font);
+  }
+  
+  div, p {
+    font-family: CharacterSheetFont;
+  }
